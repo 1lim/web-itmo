@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background: #fefefe;
+			font-family: Open Sans;
+			padding-top: 20px;
+		}
+
+		form {
+			/*background: red;*/
+		}
+
+		table {
+			/*background: yellow;*/
+			margin: auto;
+		}
+
+		tr > td:first-child {
+			/*background: blue;*/
+			text-align: right;
+		}
+
+		td {
+			padding: 5px;
+			padding-top: 10px;
+		}
+
+		.rad {
+			margin-right: 10px;
+		}
+
+		select {
+			width: 178px;
+			height: 26px;
+			font-family: Open Sans;
+			outline: none;
+		}
+
+		input[type="text"] {
+			width: 170px;
+			height: 20px
+			outline: none;
+			font-family: Open Sans;
+		}
+
+		input[type="checkbox"] {
+			/*outline: none;*/
+			width: 16px;
+			height: 16px;
+			position: relative;
+			top: 2px;
+		}
+
+		input[type="submit"]{
+			background: #1B5572;
+			border: none;
+			padding: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			font-family: Open Sans;
+			color: #eee;
+			border-radius: 3px;
+			/*margin-top: 10px;*/
+		}
+
+		textarea {
+			resize: none;
+			width: 172px;
+			height: 60px;
+			font-family: Open Sans;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+	<table>
+		<tr>
+			<td>Имя</td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>Фамилия</td>
+			<td><input type="text" name="surname"></td>
+		</tr>
+		<tr>
+			<td>Эл.адрес</td>
+			<td><input type="text" name="email"></td>
+		</tr>
+		<tr>
+			<td>Способ оплаты</td>
+			<td>
+				<select name="pay-method" id="q">
+					<option value="card">Банковская карта</option>
+					<option value="cash">Наличные</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><input class="rad" type="radio" name="get" value="delivery">Доставка</td>
+			<td><input class="rad" type="radio" name="get" value="pickup">Самовывоз</td>
+		</tr>
+		<tr>
+			<td>Комментарии к заказу</td>
+			<td>
+				<textarea name="comment"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="rules"></td>
+			<td>С правилами сайта ознакомлен</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="news"></td>
+			<td>Подписаться на рассылку</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="submit" value="Отправить">
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

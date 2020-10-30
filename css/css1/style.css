@@ -1,0 +1,189 @@
+body {
+	margin: 0;
+	padding: 0;
+	/*padding-left: 100px;*/
+	/*padding-right: 100px;*/
+	font-family: Open Sans;
+}
+.header {
+	background: url('images/bg.jpg') no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+	background-position: center;
+	/*margin-top: -200px;*/
+	/*padding-top: 100px;*/
+	/*background: red;*/
+}
+
+.header .container {
+	/*background: green;*/
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 100%;
+	/*margin: 0;*/
+	/*min-height: 10em;*/
+	/*display: table-cell;*/
+	/*vertical-align: middle;*/
+}
+
+h1 {
+	color: white;
+	font-size: 80px;
+	text-transform: uppercase;
+	/*font-family: Open Sans;*/
+	/*margin: auto;*/
+	/*position: relative;*/
+	/*top: 100px;*/
+	/*left: 25%;*/
+	/*margin-top: 200px;*/
+	text-align: center;
+}
+
+.header p {
+	color: white;
+	text-transform: uppercase;
+	/*font-family: Open Sans;*/
+	letter-spacing: 5px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.header a {
+	background: #000;
+	/*font-family: Open Sans;*/
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	/*padding-left: 40px;*/
+	/*padding-right: 40px;*/
+	width: 140px;
+	border-radius: 4px;
+	margin: auto;
+	text-align: center;
+	display: block;
+	margin-top: 30px;
+}
+
+.nav {
+	background: black;
+	color: white;
+	margin-top: -16px;
+	padding-left: 15%; /*исправить для маленького экрана!*/
+}
+
+ul {
+	/*background: #000;*/
+	list-style-type: none;
+
+}
+
+ul li {
+	display: inline-block;
+	padding: 15px;
+	/*background: green;*/
+	margin-left: -4px;
+	transition: .1s;
+	/*list-style-type: none;*/
+}
+
+ul li:hover {
+	background: #379EEC;
+	cursor: pointer;
+}
+
+.main {
+	/*background: green;*/
+	/*position: relative;*/
+	height: 300px;
+	/*padding: 0;*/
+	padding-left: 20%; /*исправить для маленького экрана!*/
+	margin-top: -20px;
+	padding-right: 20%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.main img {
+	/*background: #000;*/
+	margin-right: 50px;
+	height: 200px;
+	float: left;
+	/*width: 300px;*/
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*transform: translate(0%, -50%);*/
+}
+
+.jumbotron {
+	background: url('images/jumbotron_bg.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	color: white;
+	text-align: right;
+	padding-right: 20%;
+	position: relative;
+}
+
+.jumbotron .container {
+	/*background: red;*/
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20%;
+}
+
+.btn {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background: #379EEC;
+	position: relative;
+	top: 20px;
+	border-radius: 3px;
+}
+
+.footer {
+	background: #000;
+	height: 7vh;
+	margin-top: -16px;
+	color: white;
+	position: relative;
+}
+
+.footer p {
+	position: absolute;
+	top: 25%;
+	transform: translateY(-50%);
+	left: 20%;
+}
+
+@media only screen  and (max-width: 1224px) {
+	h1 {
+		font-size: 50px;
+	}
+
+	.main {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.nav {
+		padding-left: 0;
+	}
+
+	.jumbotron .container {
+		right: 10%;
+	}
+
+	.footer p {
+	position: absolute;
+	top: 25%;
+	transform: translateY(-50%);
+	left: 10%;
+}
+}
