@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <input type="button" value="reset"> -->
+	<form action="#" id="creationForm" onsubmit="return false;">
+		<table>
+			<tr>
+				<td>Кол-во строк:</td>
+				<td><input type="text" class="rows" value="4"></td>
+			</tr>
+			<tr>
+				<td>Кол-во столбцов:</td>
+				<td><input type="text" class="cols" value="2"></td>
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<td colspan="2"><input type="button" value="Создать" id="createTableButton"></td>
+			</tr>
+		</table>
+	</form>
+	<form action="#" id="functionForm" onsubmit="return false;">
+		<table>
+			<caption>ФУНКЦИИ</caption>
+			<tr>
+				<td>
+					<input type="text" placeholder="Ширина таблицы" maxlength="3" id="tableWidth"> <br>
+					<select name="lineType" id="lineType" placeholder="Тип линии">
+						<option disabled selected>Тип линии</option>
+						<option value="dotted">dotted</option>
+						<option value="dashed">dashed</option>
+						<option value="solid">solid</option>
+						<option value="double">double</option>
+						<option value="groove">groove</option>
+						<option value="ridge">ridge</option>
+						<option value="inset">inset</option>
+						<option value="outset">outset</option>
+					</select> <br>
+					<button id="widthAndLineButton">Применить</button>
+				</td>
+				<td>
+					<input type="text" placeholder="Заголовок"> <br>
+					<button id="addCaption">Добавить заголовок</button>
+				</td>
+				<td>
+					<input type="text" id='rowToDelete' placeholder="Номер строки"> <br>
+					<button id="deleteRow">Удалить строку</button>
+				</td>
+				<td>
+					<button id="magicButton">Magic</button>
+				</td>
+				<td>
+					<button id="resetButton">Удалить таблицу</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+</html>
+

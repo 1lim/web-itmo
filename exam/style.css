@@ -1,0 +1,105 @@
+* {
+	font-family: Open Sans;
+}
+
+body {
+	background: #323232;
+	color: white;
+	font-family: 'Open Sans';
+	margin-top: 20px;
+}
+
+#creationForm {
+	margin: auto;
+	/*background: red;*/
+	width: 180px;
+	text-align: right;
+}
+
+#creationForm input[type="text"] {
+	width: 20px;
+	border: none;
+	height: 20px;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 15px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+#creationForm input[type="button"] {
+	padding: 7px;
+	margin-top: 5px;
+	font-family: 'Open Sans';
+	font-size: 14px;
+}
+
+#functionForm {
+	display: none;
+}
+
+.fa-save {
+	font-size: 30px;
+	position: relative;
+	top: -7px;
+	left: 5px;
+	cursor: pointer;
+	transition: .2s;
+	/*outline: none;*/
+}
+
+.fa-save:active {
+	transform: translateY(2px);
+}
+
+#table {
+	/*background: green;*/
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px;
+	/*display: block;*/
+}
+
+#table td {
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	border-radius: 4px;
+	/*background: red;*/
+	margin: 5px;
+	text-align: center;
+}
+
+textarea {
+	height: 28px;
+}
+
+#functionForm {
+	margin: auto;
+	/*background: green;*/
+	width: 700px;
+}
+
+#functionForm td {
+	/*background: green;*/
+	padding: 5px;
+	text-align: center;
+}
+
+#functionForm input, select, button {
+	width: 128px;
+	padding: 4px;
+	/*text-align: center;*/
+	border-radius: 2px;
+	border: none;
+	margin-bottom: 5px;
+}
+#functionForm input {
+	width: 120px;
+	text-align: center;
+}
+
+#table > caption {
+	margin-bottom: 10px;
+}
