@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	/*padding-left: 100px;*/
 	/*padding-right: 100px;*/
-	font-family: Open Sans;
+	font-family: 'Roboto';
 }
 .header {
 	background: url('images/bg.jpg') no-repeat;
